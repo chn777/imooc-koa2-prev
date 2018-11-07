@@ -18,6 +18,7 @@
   "homepage": "https://github.com/chn777/imooc-koa2-prev#readme",
   "dependencies": {
     "async": "^2.6.1",
+    "koa": "^2.6.1",
     "node-fetch": "^2.2.1"
   },
   "devDependencies": {
