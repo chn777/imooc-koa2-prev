@@ -9,3 +9,17 @@ co(function *()
     console.log(movie.title);
 });
 console.log('end');
+
+
+
+const util = require('util');
+const fs = require('fs');
+const readFuleAsync = util.promisify(fs.readFile);
+
+console.log('sread')
+co(function *() 
+{
+    const data = yield readFuleAsync('../package.json',{encoding:'utf8'});
+    console.log(JSON.parse(data).name);    
+});
+console.log('eread')
